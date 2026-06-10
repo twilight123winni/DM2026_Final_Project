@@ -93,6 +93,18 @@ evap_stress = tmp_max × (100 − humidity)
 evap_demand = tmp_max / (prec * 0.01)
 ```
 
+#### Region Specific Features
+
+Region average score each month, historical region average (to replace the need of including region id as categorical type of the input due to memory restriction by kaggle)
+
+#### Climate Features Anomaly
+
+Compare one-day features to its climate baseline.
+
+#### Future Average Score Indicator
+
+Assign each row of data with the corresponding average monthly score for each of the upcoming 5 weeks to ensure that the next 5 weeks got assigned to the right monthly features.
+
 ### 3. Multi-Step Forecasting
 
 A multi-output regression framework is used to predict all future weeks simultaneously with different models for each week.
@@ -100,6 +112,10 @@ A multi-output regression framework is used to predict all future weeks simultan
 ### 4. Model
 
 Our best performance achieves a **Kaggle public-leaderboard MAE of 0.7896**, beating the Baseline 3 (0.8056).
+
+### 5. Output Optimization
+
+The prediction score achieved is clipped between 0 and 5, and later being rounded down to the nearest integers if the distances is less than 0.20 or 0.25
 
 ---
 
