@@ -31,8 +31,8 @@ test_data_path = '/kaggle/input/datasets/.../test.csv'
 
 To run it in Kaggle notebook, you need to: 
 1. Upload the notebook to your kaggle notebook
-2. click "add input" on the input tab on the right side
-3. select "Dataset"
+2. Click "add input" on the input tab on the right side
+3. Select "Dataset"
 4. Then put "dhammaruciwl/data-mining-final-project" in the search bar
 5. After that, you can run any of the cell to test the output yourself
 
@@ -84,19 +84,12 @@ Historical statistics computed using 1,2,3,4,5,6,12 weeks look-back windows:
 
 Climate-normalized variables are constructed by comparing current observations against historical averages.
 
-#### Evaporation Stress Indicator
+#### Evaporation Stress and Evaporation Demand Indicator
 
 A custom feature is created:
 
 ```text
 evap_stress = tmp_max × (100 − humidity)
-```
-
-#### Evaporation Demand Indicator
-
-A custom feature is created:
-
-```text
 evap_demand = tmp_max / (prec * 0.01)
 ```
 
