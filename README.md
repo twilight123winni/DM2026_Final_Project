@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the code for the **Data Mining Final Project (Spring 2026)**.
+This repository contains the code for the **Data Mining Final Project (Spring 2026)** of Team 12.
 
 The objective of this project is to predict **weekly drought severity scores (0–5)** for 2,248 regions over the next **5 weeks**, using only historical meteorological observations.
 
@@ -29,7 +29,14 @@ train_data_path = '/kaggle/input/datasets/.../train.csv'
 test_data_path = '/kaggle/input/datasets/.../test.csv'
 ```
 
-To run this project, you need to:
+To run it in Kaggle notebook, you need to: 
+1. Upload the notebook to your kaggle notebook
+2. click "add input" on the input tab on the right side
+3. select "Dataset"
+4. Then put "dhammaruciwl/data-mining-final-project" in the search bar
+5. After that, you can run any of the cell to test the output yourself
+
+If you wish to run this project locally, you need to:
 
 1. Obtain the dataset separately.
 2. Download the training and testing files.
@@ -70,7 +77,7 @@ The notebook generates a variety of temporal and climate-related features, inclu
 
 #### Rolling Window Features
 
-Historical statistics computed using 1,2,4,7,12 weeks look-back windows:
+Historical statistics computed using 1,2,3,4,5,6,12 weeks look-back windows:
 
 
 #### Climate Baseline Features
@@ -85,9 +92,17 @@ A custom feature is created:
 evap_stress = tmp_max × (100 − humidity)
 ```
 
+#### Evaporation Demand Indicator
+
+A custom feature is created:
+
+```text
+evap_demand = tmp_max / (prec * 0.01)
+```
+
 ### 3. Multi-Step Forecasting
 
-A multi-output regression framework is used to predict all future weeks simultaneously.
+A multi-output regression framework is used to predict all future weeks simultaneously with different models for each week.
 
 ### 4. Model
 
