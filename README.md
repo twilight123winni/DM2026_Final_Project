@@ -33,7 +33,7 @@ To run it in Kaggle notebook, you need to:
 1. Upload the notebook to your kaggle notebook
 2. Click "add input" on the input tab on the right side
 3. Select "Dataset"
-4. Then put "dhammaruciwl/data-mining-final-project" in the search bar
+4. Put "dhammaruciwl/data-mining-final-project" in the search bar and press the + icon
 5. After that, you can run any of the cell to test the output yourself
 
 If you wish to run this project locally, you need to:
