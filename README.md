@@ -77,8 +77,8 @@ The notebook generates a variety of temporal and climate-related features, inclu
 
 #### Rolling Window Features
 
-Historical statistics computed using 1,2,3,4,5,6,12 weeks look-back windows:
-
+Historical statistics computed using 1,2,3,4,5,6,12 weeks look-back windows
+invoking min_periods=1, to avoid NaN values produced due to insufficient past data
 
 #### Climate Baseline Features
 
