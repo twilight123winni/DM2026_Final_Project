@@ -13,9 +13,12 @@ The objective of this project is to predict **weekly drought severity scores (0�
 ```text
 .
 ├── Data_Mining_Final-Project_Notebook.ipynb
+├── data-mining-final-project-notebook-raw.ipynb
 ├── requirements.txt
 └── README.md
 ```
+
+data-mining-final-project-notebook-raw.ipynb serves as the raw unedited process from the first attempt, while Data_Mining_Final-Project_Notebook.ipynb serves as a clean filtered notebook where the results shown are only showing progress, and analysis on our best performing public leaderboard score
 
 
 ## Dataset
