@@ -30,11 +30,16 @@ test_data_path = '/kaggle/input/datasets/.../test.csv'
 ```
 
 To run it in Kaggle notebook, you need to: 
-1. Upload the notebook to your kaggle notebook
-2. Click "add input" on the input tab on the right side
-3. Select "Dataset"
-4. Put "dhammaruciwl/data-mining-final-project" in the search bar and press the + icon
-5. After that, you can run any of the cell to test the output yourself
+1. Upload the notebook to your kaggle notebook.
+2. Click "add input" on the input tab on the right side.
+3. Select "Dataset".
+4. Put "dhammaruciwl/data-mining-final-project" in the search bar and press the + icon.
+5. After that, you can run any of the cell to test the output yourself.
+
+We utilize free GPU usage from kaggle, to activate it:
+1. You must verify your account with phone numbers.
+2. Then open the notebook and hover to the setting and select the gpu in accelerator.
+3. After one of the GPU is checked, the notebook will run on gpu otherwise remove device='gpu' from every model hyperparameter.
 
 If you wish to run this project locally, you need to:
 
