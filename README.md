@@ -91,7 +91,7 @@ A multi-output regression framework is used to predict all future weeks simultan
 
 ### 4. Model
 
-Our best performance achieves a **Kaggle public-leaderboard MAE of 0.7896**, beating the Baseline 3: **0.8056**.
+Our best performance achieves a **Kaggle public-leaderboard MAE of 0.7896**, beating the Baseline 3 (0.8056).
 
 ---
 
